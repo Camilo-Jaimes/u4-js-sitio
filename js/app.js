@@ -20,7 +20,41 @@ document.getElementById("salida").textContent = mensaje;
 const btnVisita = document.getElementById("btnVisita");
 const totalVisitas = document.getElementById("totalVisitas");
 
-btnVisita.addEventListener("click", () => {
+document.getElementById("btnVisitas").addEventListener("click", () => {
   contadorVisitas++;
-  totalVisitas.textContent = contadorVisitas;
+  document.getElementById("totalVisitas").textContent = contadorVisitas;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    function mostrarHora() {
+        const reloj = document.getElementById("reloj");
+        if (!reloj) return;
+
+        const ahora = new Date();
+        let horas = ahora.getHours().toString().padStart(2, "0");
+        let minutos = ahora.getMinutes().toString().padStart(2, "0");
+        let segundos = ahora.getSeconds().toString().padStart(2, "0");
+
+        reloj.textContent = `${horas}:${minutos}:${segundos}`;
+    }
+
+    setInterval(mostrarHora, 1000);
+    mostrarHora();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  function cambiarColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+
+  document.getElementById("btn-rojo")?.addEventListener("click", () => cambiarColor("red"));
+  document.getElementById("btn-verde")?.addEventListener("click", () => cambiarColor("green"));
+  document.getElementById("btn-azul")?.addEventListener("click", () => cambiarColor("blue"));
+});
+
+
+
+
+
+
+

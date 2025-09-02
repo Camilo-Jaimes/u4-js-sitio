@@ -285,7 +285,18 @@ button:hover {
   color: #e74c3c;
   font-size: 0.9em;
   margin-top: 5px;
-  display: block;
+  display: none;  
+}
+
+.mensaje-exito {
+  color: #2ecc71;
+  background: #eafaf1;
+  border: 1px solid #2ecc71;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+  text-align: center;
+  display: none;
 }
 
 .galeria-imagenes {
@@ -367,3 +378,14 @@ footer a:focus {
   text-decoration: underline;
   outline: none;
 }
+
+.color-demo { margin: 1.5rem 0; text-align: center; }
+.caja-color {
+  width: 260px; height: 120px; margin: 0.5rem auto 1rem;
+  border-radius: 12px; border: 2px solid #ddd; display: grid; place-items: center;
+  font-weight: 600; transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+.botones-color button {
+  margin: 0 .25rem; padding: .5rem .9rem; border-radius: 10px; border: 1px solid #ccc; cursor: pointer;
+}
+.botones-color button:focus { outline: 2px solid #333; outline-offset: 2px; }
