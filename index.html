@@ -2,88 +2,99 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sitio web informativo sobre Fórmula 1: equipos, pilotos y calendario." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Inicio | Mundo Fórmula 1</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web informativo sobre Fórmula 1: equipos, pilotos y calendario." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Inicio | Mundo Fórmula 1</title>
 </head>
 
-<body>
-    <header>
-        <a href="index.html" class="activo"><img src="img/Logo.png" class="logo"
-                alt="Logo de Mundo Fórmula 1 con un monoplaza rojo" width="207" height="100"></a>
-        <div id="reloj"></div>
-        <nav>
-            <ul>
-                <li><a href="historia.html" class="activo">Historia</a></li>
-                <li><a href="equipos.html" class="activo">Equipos</a></li>
-                <li><a href="pilotos.html" class="activo">Pilotos</a></li>
-                <li><a href="calendario.html" class="activo">Calendario</a></li>
-                <li><a href="tecnologia.html" class="activo">Tecnología</a></li>
-                <li><a href="galeria.html" class="activo">Galería</a></li>
-                <li><a href="contacto.html" class="activo">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Mundo Formula 1</h1>
-        <p>Velocidad, historia y pasión por el automovilismo</p>
-        <div id="salida"></div>
-        <button id="btnVisitas">Registrar visita</button>
-        <p>Total de visitas: <span id="totalVisitas">0</span></p>
-        <section id="intro">
-            <h2>Bienvenido a la Fórmula 1</h2>
-            <p>
-                La Fórmula 1 es la máxima categoría del automovilismo mundial. Aquí encontrarás información
-                sobre su historia, los equipos más importantes, los pilotos legendarios y las últimas
-                innovaciones tecnológicas.
-            </p>
-        </section>
-        <h2>Noticias Destacadas</h2>
-        <div class="tarjetas">
-            <div class="caja uno">
-                <article class="tarjeta">
-                    <h3>Nueva temporada 2025</h3>
-                    <p>La temporada 2025 arranca con grandes cambios en los equipos y nuevas reglas técnicas.</p>
-                    <a href="calendario.html">Ver calendario</a>
-                </article>
-            </div>
+<body data-page="index">
+  <header>
+    <a href="index.html"><img src="img/Logo.png" class="logo"
+        alt="Logo de Mundo Fórmula 1 con un monoplaza rojo" width="207" height="100"></a>
+    <div id="reloj"></div>
+    <nav>
+      <ul>
+        <li><a href="historia.html" data-page="historia">Historia</a></li>
+        <li><a href="equipos.html" data-page="equipos">Equipos</a></li>
+        <li><a href="pilotos.html" data-page="pilotos">Pilotos</a></li>
+        <li><a href="calendario.html" data-page="calendario">Calendario</a></li>
+        <li><a href="tecnologia.html" data-page="tecnologia">Tecnología</a></li>
+        <li><a href="galeria.html" data-page="galeria">Galería</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="caja dos">
-                <article class="tarjeta">
-                    <h3>Pilotos destacados</h3>
-                    <p>Descubre a los pilotos más importantes de la parrilla actual.</p>
-                    <a href="pilotos.html">Ver pilotos</a>
-                </article>
-            </div>
+  <main>
+    <h1>Mundo Formula 1</h1>
+    <p>Velocidad, historia y pasión por el automovilismo</p>
+    <div id="salida"></div>
+    <button id="btnVisitas">Registrar visita</button>
+    <p>Total de visitas: <span id="totalVisitas">0</span></p>
+    <section id="intro">
+      <h2>Bienvenido a la Fórmula 1</h2>
+      <p>
+        La Fórmula 1 es la máxima categoría del automovilismo mundial. Aquí encontrarás información
+        sobre su historia, los equipos más importantes, los pilotos legendarios y las últimas
+        innovaciones tecnológicas.
+      </p>
+    </section>
 
-            <div class="caja tres">
-                <article class="tarjeta">
-                    <h3>Equipos</h3>
-                    <p>Conoce a los equipos más destacados de la Fórmula 1, su historia, logros y la innovación que
-                        aportan.</p>
-                    <a href="equipos.html">Ver equipos</a>
-                </article>
-            </div>
-        </div>
-        <aside class="tarjeta">
-            <h2>Dato Curioso</h2>
-            <p>El coche de Fórmula 1 puede ir de 0 a 100 km/h en menos de 2,5 segundos.</p>
-        </aside>
-    </main>
+    <h2>Noticias Destacadas</h2>
+    <div class="tarjetas">
+      <div class="caja uno">
+        <article class="tarjeta">
+          <h3>Nueva temporada 2025</h3>
+          <p>La temporada 2025 arranca con grandes cambios en los equipos y nuevas reglas técnicas.</p>
+          <a href="calendario.html">Ver calendario</a>
+        </article>
+      </div>
 
-    <footer>
-        <p>Todos los derechos reservados, Camilo Jaimes 2025 &copy; Copyright | Fórmula 1 Fan Page.</p>
-        <a href="politica_de_privacidad.html">Política de privacidad</a><br>
-        <a href="acerca.html">Sobre mí</a>
-    </footer>
-    <script src="js/app.js"></script>
+      <div class="caja dos">
+        <article class="tarjeta">
+          <h3>Pilotos destacados</h3>
+          <p>Descubre a los pilotos más importantes de la parrilla actual.</p>
+          <a href="pilotos.html">Ver pilotos</a>
+        </article>
+      </div>
+
+      <div class="caja tres">
+        <article class="tarjeta">
+          <h3>Equipos</h3>
+          <p>Conoce a los equipos más destacados de la Fórmula 1, su historia, logros y la innovación que
+            aportan.</p>
+          <a href="equipos.html">Ver equipos</a>
+        </article>
+      </div>
+    </div>
+
+    <section class="color-demo">
+      <div class="botones-color">
+        <button id="btn-rojo" type="button">Rojo</button>
+        <button id="btn-verde" type="button">Verde</button>
+        <button id="btn-azul" type="button">Azul</button>
+      </div>
+    </section>
+
+    <aside class="tarjeta">
+      <h2>Dato Curioso</h2>
+      <p>El coche de Fórmula 1 puede ir de 0 a 100 km/h en menos de 2,5 segundos.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados, Camilo Jaimes 2025 &copy; Copyright | Fórmula 1 Fan Page.</p>
+    <a href="politica_de_privacidad.html">Política de privacidad</a><br>
+    <a href="acerca.html">Sobre mí</a>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 
 </html>
